@@ -11,3 +11,7 @@ const formattedDate = `${days[dayOfWeekIndex]}, ${today.getDate()} ${months[mont
 
 // Display the date in the HTML element
 document.getElementById('current-date').textContent = formattedDate;
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form input[type="text"]').focus();
+});
