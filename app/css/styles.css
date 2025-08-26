@@ -79,6 +79,8 @@ a:hover {
 }
 
 .card-image {
+    width: auto;
+    height: 96px;
     border-radius: 16px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: width 0.3s ease, height 0.3s ease;
@@ -137,20 +139,13 @@ footer p {
     color: #8a8a8d;
 }
 
-/* responsive design */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     .card-grid {
         grid-template-columns: repeat(6, 1fr);
     }
 }
 
-@media screen and (max-width: 900px) {
-    .card-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
     }
