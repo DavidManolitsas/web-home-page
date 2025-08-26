@@ -119,6 +119,7 @@ form input[type="text"] {
     padding: 8px 16px;
     margin-right: 8px;
     outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 form button {
