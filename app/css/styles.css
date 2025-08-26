@@ -183,3 +183,20 @@ form button {
         flex-shrink: 0;
     }
 }
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: #fff;
+        opacity: 0.95;
+    }
+
+    html {
+        background-color: #222;
+    }
+
+    input, button {
+        color: #e0e0e0;
+        border-color: #444;
+    }
+}
