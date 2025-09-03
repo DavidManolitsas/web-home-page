@@ -7,7 +7,19 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const dayOfWeekIndex = today.getDay();
 const monthIndex = today.getMonth();
 
-const formattedDate = `${days[dayOfWeekIndex]}, ${today.getDate()} ${months[monthIndex]} ${today.getFullYear()}`;
+let date = today.getDate();
+
+if (date === 1) {
+    date += "st";
+} else if (date === 2) {
+    date += "nd";
+} else if (date === 3) {
+    date += "rd";
+} else {
+    date += "th";
+}
+
+const formattedDate = `${days[dayOfWeekIndex]}, ${date} ${months[monthIndex]} ${today.getFullYear()}`;
 
 // Display the date in the HTML element
 document.getElementById('current-date').textContent = formattedDate;
